@@ -24,9 +24,8 @@ const Header = () => {
   }
 
   // Use light logo as default, switch to dark logo when in dark mode
-  const logoSrc = mounted && resolvedTheme === 'dark'
-    ? '/static/images/logo-dark.png'
-    : '/static/images/logo.png'
+  const logoSrc =
+    mounted && resolvedTheme === 'dark' ? '/static/images/logo-dark.png' : '/static/images/logo.png'
 
   return (
     <header className={headerClass}>
